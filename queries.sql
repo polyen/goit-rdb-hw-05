@@ -61,12 +61,7 @@ RETURNS FLOAT
 DETERMINISTIC
 NO SQL
 BEGIN
-	DECLARE result FLOAT default 0;
-    
-	IF divider = 0
-    THEN
-		RETURN result;
-	END IF;
+    DECLARE result FLOAT;
     
     SET result = quantity / divider;
     
